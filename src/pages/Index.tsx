@@ -1,14 +1,12 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/use-toast";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
   const handleBookTickets = () => {
-    toast({
-      title: "Feature coming soon!",
-      description: "Ticket booking is not available yet. Stay tuned for updates!",
-    });
+    navigate("/book");
   };
 
   return (
